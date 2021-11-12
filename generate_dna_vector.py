@@ -48,7 +48,7 @@ model = Word2Vec(corpus,min_count=1,size=100,sg=1,hs=1,window=5)
 model.wv.save("word2vec/model-dnavec.wv")
 
 
-d2v_file = open('new-path_to_save','w')
+d2v_file = open('new-path_to_save','w') #path_example: 'word2vec/dna-word2vec.csv'
 csv_writer = csv.writer(d2v_file)
 i =0
 for key,value in d2v.items():
